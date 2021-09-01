@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import SongList from '../components/SongList';
 
 const ChartContainer = () => {
     const [songs, setSongs] = useState([]);
@@ -20,16 +21,9 @@ const ChartContainer = () => {
     }
 
     return (
-        <p>Charts container hello</p>
+            <SongList songs={songs} onSongClick={onSongClick}/>
+        
     )
-
-
-
-
-
-
-
-
 }
 
 export default ChartContainer
