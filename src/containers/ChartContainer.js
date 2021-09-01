@@ -13,7 +13,7 @@ const ChartContainer = () => {
       const getSongs = function(){
         fetch('https://itunes.apple.com/gb/rss/topsongs/limit=20/json')
         .then(res => res.json())
-        .then(songs => setSongs(songs))
+        .then(songs => setSongs(songs.feed.entry))
     }
 
     const onSongClick = function(song){
@@ -21,8 +21,9 @@ const ChartContainer = () => {
     }
 
     return (
+        <div>
             <SongList songs={songs} onSongClick={onSongClick}/>
-        
+        </div>
     )
 }
 

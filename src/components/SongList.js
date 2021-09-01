@@ -3,14 +3,14 @@ import SongItem from './SongItem'
 
 const SongList = ({songs, onSongClick}) => {
 
-    const songItems = songs.map((song, index) => {
+    const songsItems = songs.map((song, index) => {
         return <SongItem song={song} key={index} onSongClick={onSongClick}/>
     })
 
     return (
         <div>
             <ul>
-                {songItems}
+                {songsItems}
             </ul>
         </div>
     )
