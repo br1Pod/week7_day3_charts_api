@@ -9,9 +9,9 @@ const SongList = ({songs, onSongClick}) => {
 
     return (
         <div>
-            <ul>
+            <ol>
                 {songsItems}
-            </ul>
+            </ol>
         </div>
     )
 }

@@ -7,7 +7,9 @@ const SongItem = ({song, onSongClick}) => {
     }
 
     return (
-    <li onClick={handleClick}>{song["im:name"].label}</li>
+    <li onClick={handleClick}>
+        {song["im:name"].label} : {song["im:artist"].label}
+    </li>
     )
 }
 
