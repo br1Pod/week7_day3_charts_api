@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import SongList from '../components/SongList';
 
-const ChartContainer = () => {
+import './ChartContainer.css';
+
+const ChartContainer = (song) => {
     const [songs, setSongs] = useState([]);
     const [selectedSong, setSelectedSong] = useState(null);
 
@@ -22,6 +24,7 @@ const ChartContainer = () => {
 
     return (
         <div>
+            <h1>Charts</h1>
             <SongList songs={songs} onSongClick={onSongClick}/>
         </div>
     )

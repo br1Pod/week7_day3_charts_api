@@ -1,0 +1,13 @@
+body {
+    background-color: #333;
+    text-align: center;
+    display: grid;
+    color: chocolate;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 50px;
+}

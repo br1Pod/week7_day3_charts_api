@@ -1,5 +1,6 @@
 import React from 'react';
 import SongItem from './SongItem'
+import './SongList.css';
 
 const SongList = ({songs, onSongClick}) => {
 
@@ -9,7 +10,7 @@ const SongList = ({songs, onSongClick}) => {
 
     return (
         <div>
-            <ol>
+            <ol id='song-ordered-list'>
                 {songsItems}
             </ol>
         </div>

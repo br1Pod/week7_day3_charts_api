@@ -9,11 +9,15 @@ const SongItem = ({song, onSongClick}) => {
 
     
 
-
     return (
     <li class="list-display" onClick={handleClick}>
-        {song["im:name"].label} : {song["im:artist"].label}
-        <img class="cover-pic" alt="thumbnail image" src={song["im:image"][1].label} />
+        <p class="track-name">{song["im:name"].label}
+            <br />
+            <span>{song["im:artist"].label}</span>
+        </p>
+        <img class="cover-pic"  
+            alt="thumbnail" 
+            src={song["im:image"][1].label} />
     </li>
     )
 }
